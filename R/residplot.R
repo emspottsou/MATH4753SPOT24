@@ -1,4 +1,4 @@
-#' Title
+#' Residual plot
 #'
 #' @param regression model object
 #'
