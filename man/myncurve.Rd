@@ -4,10 +4,10 @@
 \alias{myncurve}
 \title{myncurve}
 \usage{
-myncurve(mu, sigma)
+myncurve(mu, sigma, a)
 }
 \arguments{
-\item{sigma}{}
+\item{a}{}
 }
 \value{
 curve and list
