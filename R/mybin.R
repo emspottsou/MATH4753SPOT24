@@ -1,8 +1,8 @@
 #' Binomial simulation
 #'
-#' @param iter
-#' @param n
-#' @param p
+#' @param iter numeric vector
+#' @param n numeric vector
+#' @param p numeric vector
 #'
 #' @return barplot
 #' @export

@@ -1,8 +1,8 @@
 #' myncurve
 #'
-#' @param mu
-#' @param sigma
-#' @param a
+#' @param mu numeric vector
+#' @param sigma numeric vector
+#' @param a numeric vector
 #'
 #' @return curve and list
 #' @export
