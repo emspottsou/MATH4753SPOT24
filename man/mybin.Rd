@@ -7,7 +7,11 @@
 mybin(iter = 100, n = 10, p = 0.7)
 }
 \arguments{
-\item{p}{}
+\item{iter}{numeric vector}
+
+\item{n}{numeric vector}
+
+\item{p}{numeric vector}
 }
 \value{
 barplot

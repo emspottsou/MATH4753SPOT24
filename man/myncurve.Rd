@@ -7,7 +7,11 @@
 myncurve(mu, sigma, a)
 }
 \arguments{
-\item{a}{}
+\item{mu}{numeric vector}
+
+\item{sigma}{numeric vector}
+
+\item{a}{numeric vector}
 }
 \value{
 curve and list
@@ -16,5 +20,5 @@ curve and list
 myncurve
 }
 \examples{
-myncurve(mu=10,sigma=2)
+myncurve(mu=10,sigma=2, a=6)
 }
