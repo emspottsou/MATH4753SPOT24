@@ -1,9 +1,9 @@
 #' mycltu
 #'
-#' @param n
-#' @param iter
-#' @param a
-#' @param b
+#' @param n numeric vector
+#' @param iter numeric vector
+#' @param a numeric vector
+#' @param b numeric vector
 #'
 #' @return
 #' @export
