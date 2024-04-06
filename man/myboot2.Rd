@@ -26,5 +26,5 @@ invisible list
 myboot2
 }
 \examples{
-myboot2(iter=10000, x, fun="var")
+myboot2(iter=10000, x=1:10, fun="var")
 }

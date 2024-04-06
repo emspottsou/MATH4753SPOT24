@@ -5,7 +5,7 @@
 #' @param fun string
 #' @param alpha numeric vector
 #' @param cx numeric vector
-#' @param ...
+#' @param ... other things
 #'
 #' @return invisible list
 #' @export

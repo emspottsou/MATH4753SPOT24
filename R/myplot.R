@@ -1,6 +1,6 @@
-#' Title
+#' myplot
 #'
-#' @param x
+#' @param x numeric vector
 #'
 #' @return numeric vector
 #' @export
