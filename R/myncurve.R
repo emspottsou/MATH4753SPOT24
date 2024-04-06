@@ -4,12 +4,16 @@
 #' @param sigma numeric vector
 #' @param a numeric vector
 #'
+#' @importFrom graphics polygon
+#' @importFrom stats pnorm
+#'
 #' @return curve and list
 #' @export
 #'
 #' @examples
 #' myncurve(mu=10,sigma=2, a=6)
 myncurve = function(mu, sigma, a){
+  x <- NULL
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))
   xcurve=seq(-6*sigma,a,length=1000)
 

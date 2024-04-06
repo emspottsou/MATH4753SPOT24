@@ -4,6 +4,10 @@
 #' @param gamma numeric vector
 #' @param p numeric vector
 #'
+#' @importFrom stats pbinom
+#' @importFrom stats pnorm
+#' @importFrom stats uniroot
+#'
 #' @return list
 #' @export
 #'
@@ -27,6 +31,7 @@ ntickets=function(N, gamma, p){
   }
   nc <- uniroot(approxnorm, interval=c(N, N+20))$root # value for which probability of overbooking is equal to gamma
 
+  x <- NULL
   curve(approxnorm(x), from=N, to=(nc+20), xlab="n", ylab="Objective", main="Objective function to find n with normal approximation")
   abline(h=0,v=nc)
 
