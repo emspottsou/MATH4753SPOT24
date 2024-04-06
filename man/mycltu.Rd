@@ -7,7 +7,13 @@
 mycltu(n, iter, a = 0, b = 10)
 }
 \arguments{
-\item{b}{}
+\item{n}{numeric vector}
+
+\item{iter}{numeric vector}
+
+\item{a}{numeric vector}
+
+\item{b}{numeric vector}
 }
 \description{
 mycltu
