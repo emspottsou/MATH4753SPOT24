@@ -2,18 +2,18 @@
 % Please edit documentation in R/myplot.R
 \name{myplot}
 \alias{myplot}
-\title{Title}
+\title{myplot}
 \usage{
 myplot(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{numeric vector}
 }
 \value{
 numeric vector
 }
 \description{
-Title
+myplot
 }
 \examples{
 myplot(5)

@@ -17,7 +17,7 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 
 \item{cx}{numeric vector}
 
-\item{...}{}
+\item{...}{other things}
 }
 \value{
 invisible list

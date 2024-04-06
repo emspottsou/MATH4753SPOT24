@@ -7,6 +7,13 @@
 #' @param cx numeric vector
 #' @param ... other things
 #'
+#' @importFrom stats quantile
+#' @importFrom graphics hist
+#' @importFrom graphics abline
+#' @importFrom graphics segments
+#' @importFrom graphics text
+#'
+#'
 #' @return invisible list
 #' @export
 #'
@@ -15,7 +22,7 @@ myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where
   n=length(x)   #sample size
 
   y=sample(x,n*iter,replace=TRUE)
-  rs.mat=matrix(y,nr=n,nc=iter,byrow=TRUE)
+  rs.mat=matrix(y,nrow=n,ncol=iter,byrow=TRUE)
   xstat=apply(rs.mat,2,fun) # xstat is a vector and will have iter values in it
   ci=quantile(xstat,c(alpha/2,1-alpha/2))# Nice way to form a confidence interval
   # A histogram follows
@@ -25,7 +32,7 @@ myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where
             ...)
 
   #mat will be a matrix that contains the data, this is done so that I can use apply()
-  mat=matrix(x,nr=length(x),nc=1,byrow=TRUE)
+  mat=matrix(x,nrow=length(x),ncol=1,byrow=TRUE)
 
   #pte is the point estimate
   #This uses whatever fun is
