@@ -19,6 +19,9 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 
 \item{...}{}
 }
+\value{
+invisible list
+}
 \description{
 myboot2
 }

@@ -15,6 +15,9 @@ mycltu(n, iter, a = 0, b = 10)
 
 \item{b}{numeric vector}
 }
+\value{
+curves
+}
 \description{
 mycltu
 }
