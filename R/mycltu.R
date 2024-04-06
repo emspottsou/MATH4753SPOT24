@@ -5,7 +5,7 @@
 #' @param a numeric vector
 #' @param b numeric vector
 #'
-#' @return
+#' @return curves
 #' @export
 #'
 #' @examples mycltu(n=20,iter=100000)

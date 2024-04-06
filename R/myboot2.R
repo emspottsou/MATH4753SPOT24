@@ -7,7 +7,7 @@
 #' @param cx numeric vector
 #' @param ...
 #'
-#' @return
+#' @return invisible list
 #' @export
 #'
 #' @examples myboot2(iter=10000, x, fun="var")
