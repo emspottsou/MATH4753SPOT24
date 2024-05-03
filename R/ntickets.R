@@ -22,17 +22,17 @@ ntickets=function(N, gamma, p){
     nd = nd + 1 # if n is not too large, n is increased and checked again
   }
 
-  plot(N:(nd+20), binomfind(N=N, gamma=gamma, p=p, nd=N:(nd+20)) - gamma, type="b", xlab="n", ylab="Objective", pch=19, main="Objective function to find n using binomial distribution")
+  plot(N:(nd+20), binomfind(N=N, gamma=gamma, p=p, nd=N:(nd+40)) - gamma, type="b", xlab="n", ylab="Objective", pch=19, main="Objective function to find n using binomial distribution")
   abline(h=0, v=nd)
 
   # Using the continuous normal approximation:
   approxnorm=function(n){
     pnorm(q=N+0.5, mean=p*n, sd=sqrt(n*p*(1-p)), lower.tail=FALSE) - gamma # probability of overbooking minus gamma
   }
-  nc <- uniroot(approxnorm, interval=c(N, N+20))$root # value for which probability of overbooking is equal to gamma
+  nc <- uniroot(approxnorm, interval=c(N, N+40))$root # value for which probability of overbooking is equal to gamma
 
   x <- NULL
-  curve(approxnorm(x), from=N, to=(nc+20), xlab="n", ylab="Objective", main="Objective function to find n with normal approximation")
+  curve(approxnorm(x), from=N, to=(nc+40), xlab="n", ylab="Objective", main="Objective function to find n with normal approximation")
   abline(h=0,v=nc)
 
   list(nd=nd, nc=nc, N=N, gamma=gamma, p=p)
