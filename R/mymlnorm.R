@@ -5,6 +5,9 @@
 #' @param sig numeric vector
 #' @param ... other
 #'
+#'@importFrom graphics contour
+#'@importFrom stats sd
+#'
 #' @return list
 #' @export
 #'
