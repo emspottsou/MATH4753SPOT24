@@ -20,7 +20,7 @@ library(MATH4753SPOT24)
 
 # Introduction
 
-This package contains a collection of functions and data used for MATH 4753.
+This package contains a collection of functions and data used for MATH 4753. It does not contain all of the functions and all of the data, but it does contain those that I found most useful or interesting.
 
 # mybin()
 
