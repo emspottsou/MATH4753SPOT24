@@ -22,7 +22,7 @@ ntickets=function(N, gamma, p){
     nd = nd + 1 # if n is not too large, n is increased and checked again
   }
 
-  plot(N:(nd+20), binomfind(N=N, gamma=gamma, p=p, nd=N:(nd+40)) - gamma, type="b", xlab="n", ylab="Objective", pch=19, main="Objective function to find n using binomial distribution")
+  plot(N:(nd+40), binomfind(N=N, gamma=gamma, p=p, nd=N:(nd+40)) - gamma, type="b", xlab="n", ylab="Objective", pch=19, main="Objective function to find n using binomial distribution")
   abline(h=0, v=nd)
 
   # Using the continuous normal approximation:
