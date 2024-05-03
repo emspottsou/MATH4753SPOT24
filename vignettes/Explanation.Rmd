@@ -1,0 +1,75 @@
+---
+title: "Explaining the package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Explaining the package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753SPOT24)
+```
+
+# Introduction
+
+This package contains a collection of functions and data used for MATH 4753.
+
+# mybin()
+
+The mybin() function is a binomial simulation, creating a frequency distribution for the simulation.
+
+```{r}
+mybin(iter=10000, n=20, p=0.5)
+```
+
+# myboot2()
+
+The myboot2() function is a bootstrapping function. It takes a data set and creates a bootstrap estimate of a specified parameter.
+
+```{r}
+x = rnorm(20, mean=10, sd=2)
+myboot2(iter=10000, x, fun="mean")
+```
+
+# mycltu()
+
+The mycltu() function demonstrates the Central Limit Theorem for the sample mean of a uniform distribution.
+
+```{r}
+mycltu(n=15, iter=1000, a=1, b=20)
+```
+
+# mymlnorm()
+
+The mymlnorm() function finds finds a maximum likelihood estimate for the mean and standard deviation of a normal distribution.
+
+```{r}
+x = rnorm(n=30, mean=50, sd=7)
+mymlnorm(x=x, mu=1:100, sig=1:10)
+```
+
+# myncurve()
+
+The myncurve() function gives a graphical representation of P(X < a) for a normal distribution, as well as the probability.
+
+```{r}
+myncurve(mu=20, sigma=2, a=18)
+```
+
+# ntickets()
+
+The ntickets() function was created for Project 1, which deals with the problem of overbooking plane flights. It considers the number of seats on a plane, the expected probability of someone with a ticket showing up to take a seat, and the desired probability of overbooking, and finds the greatest number of tickets that can be sold without exceeding the desired probability of overbooking, using a binomial distribution and the normal approximation to the binomial distribution.
+
+```{r}
+ntickets(N=200, gamma=0.01, p=0.95)
+```
+
+
