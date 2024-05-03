@@ -69,7 +69,7 @@ myncurve(mu=20, sigma=2, a=18)
 The ntickets() function was created for Project 1, which deals with the problem of overbooking plane flights. It considers the number of seats on a plane, the expected probability of someone with a ticket showing up to take a seat, and the desired probability of overbooking, and finds the greatest number of tickets that can be sold without exceeding the desired probability of overbooking, using a binomial distribution and the normal approximation to the binomial distribution.
 
 ```{r}
-ntickets(N=200, gamma=0.01, p=0.95)
+ntickets(N=300, gamma=0.01, p=0.95)
 ```
 
 
